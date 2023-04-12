@@ -2,10 +2,13 @@ const sampleObject = { red: "#FF0000", green: "#00FF00", white: "#FFFFFF" };
 
 function hasKey(key) {
   //   write your code here
-	if (sampleObject.key!=undefined) {
+if (key in window.sampleObject) {
     return true;
 }
-return false;
+else{
+    return false;
+	
+}
 }
 
 // Do not change the code below
